@@ -18,15 +18,15 @@ public class Tabla_de_operadores {
         switch (operador){
             case "+":
                 for (int i = desde; i <= hasta; i++){
-                    System.out.println(i + " + " +  numero  + " = " + (numero  + i));
+                    System.out.println(i + " + " +  numero  + " = " + (i + numero));
                 }break;
             case "-":
                 for (int i = desde; i <= hasta; i++){
-                    System.out.println(i + " - " +  numero  + " = " + (numero - i));
+                    System.out.println(i + " - " +  numero  + " = " + (i - numero));
                 }break;
             case "*":
                 for (int i = desde; i <= hasta; i++){
-                    System.out.println(i + " * " +  numero  + " = " + (numero * i));
+                    System.out.println(i + " * " +  numero  + " = " + (i * numero));
                 }break;
          case "/":
     if (numero == 0) {
@@ -40,16 +40,10 @@ public class Tabla_de_operadores {
         );
     }
     break;
-
-
-                 
-                    
-                    
-                } 
-       }
-        
-                
-        
-        
-    }
+         default:
+             System.out.println("operador incorrecto ingresa el operador correcto (+ - * /)");
+         } 
+        sc.close();
+       }   
+}
 
